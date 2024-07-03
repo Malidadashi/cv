@@ -1,0 +1,31 @@
+/* ScrollAnimation.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-text {
+    font-size: 24px;
+    margin-bottom: 1px;
+}
+
+.mouse-icon {
+    width: 24px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    position: relative;
+    animation: mouseScroll 1.5s infinite;
+}
+
+@keyframes mouseScroll {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
