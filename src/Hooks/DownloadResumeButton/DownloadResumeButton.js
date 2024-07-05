@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import './DownloadResumeButton.css'
+import { IoCloudDownloadOutline } from "react-icons/io5";
 
 const DownloadResumeButton = () => {
   useEffect(() => {
@@ -28,7 +30,7 @@ const DownloadResumeButton = () => {
   }, []);
 
   return (
-    <button id="download-button">Download Resume</button>
+    <button className="download-button"><IoCloudDownloadOutline /> Download CV </button>
   );
 };
 

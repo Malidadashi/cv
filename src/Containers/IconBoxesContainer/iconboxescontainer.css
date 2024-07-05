@@ -1,0 +1,9 @@
+/* src/components/IconBoxesContainer.css */
+.icon-boxes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-left: -5rem;
+
+}

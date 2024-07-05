@@ -1,23 +1,95 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); */
-
-/* body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-  display: flex;
-} */
-
 .introduce {
   text-align: center;
+  justify-items: center;
   padding: 3rem 1rem;
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  margin: 2rem 0;
+  margin: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   direction: rtl;
+}
+
+
+.hand {
+  font-size: 3rem;
+  animation: wave 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.arrow {
+  margin-top: 0rem;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.introduce-icons {
+  display: flex;
+  font-size: larger;
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  direction: ltr;
+
+  .introduce-icons-down {
+    display: flex;
+    margin-left: 1rem;
+  }
+
 }
 
 .introduce-title {
@@ -94,7 +166,7 @@
 .social-icons-column {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2.2rem;
 }
 
 .social-icon {

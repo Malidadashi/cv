@@ -1,0 +1,29 @@
+.About {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h4 {
+        margin: -1rem 0 1rem 2rem;
+        
+    }
+
+
+    .About-image {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .About-introduction {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+
+    }
+
+}
