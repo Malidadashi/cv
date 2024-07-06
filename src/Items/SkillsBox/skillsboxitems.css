@@ -1,32 +1,35 @@
-.items-container {
-    display: flex;
-    justify-content: space-around;
+.skill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+
+.skill-box {
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  padding: 20px;
+  width: 16rem;
+
+  h2 {
+    text-align: center;
   }
-  
-  .item-box {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    width: 40%;
-  }
-  
-  .item-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .item-text-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .item-text-list li {
-    margin-bottom: 5px;
-  }
-  
-  .item-tick-icon {
-    color: green;
-    margin-right: 8px;
-  }
-  
+}
+
+.skill-box-content {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.text-item {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+
+}
+
+.text-item svg {
+  margin-right: 5px;
+}

@@ -1,35 +1,32 @@
-import React from "react";
-import skillsboxitems from "./skillsboxitems.css";
+import React from 'react';
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import './skillsboxitems.css'
 
-const SkillsBoxItems = () => {
-  const [itemsData] = React.useState([
-    {
-      title: "Title 1",
-      texts: ["Text 1", "Text 2", "Text 3", "Text 4"],
-      texts: ["Text 5", "Text 6", "Text 7", "Text 8"],
-
-    },
-    // {
-    //   texts: ["Text 1", "Text 2", "Text 3", "Text 4"],
-    // },
-  ]);
-
+function SkillsBoxItems({ title, leftTexts, rightTexts }) {
   return (
-    <div className="items">
-      {itemsData.map((item, index) => (
-        <div className="box" key={index}>
-          <h3 className="title">{item.title}</h3>
-          <ul className="text-list">
-            {item.texts.map((text, idx) => (
-              <li key={idx}>
-                <span className="tick-icon">✔</span> {text}
-              </li>
+    <div className="skill">
+      <div className="skill-box">
+        <h2>{title}</h2>
+        <div className="skill-box-content">
+          <div className="left">
+            {leftTexts.map((text, index) => (
+              <div key={index} className="text-item">
+                <IoMdCheckmarkCircleOutline /> {text}
+              </div>
             ))}
-          </ul>
+          </div>
+          <div className="right">
+            {rightTexts.map((text, index) => (
+              <div key={index} className="text-item">
+                <IoMdCheckmarkCircleOutline /> {text}
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
+      </div>
+
     </div>
   );
-};
+}
 
 export default SkillsBoxItems;

@@ -1,16 +1,17 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #e2e2e2;
-    padding: 20px;
+.skill-title {
+  text-align: center;
+
+  h3 {
+    padding-bottom: 1rem;
+    margin-top: -1rem;
   }
-  
-  .container .items-container {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
+}
+
+
+
+.skill-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+  gap: -200px;
+}
