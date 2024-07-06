@@ -1,14 +1,14 @@
-import React from 'react'
-import Cskills from '../Components/Skill/Cskills'
-import Header from '../Components/Heder/Header'
+import React from "react";
+import Cskills from "../Components/Skill/Cskills";
+import Header from "../Components/Heder/Header";
 
 const Skills = () => {
   return (
     <div>
-      <Header/>
-      <Cskills/>
+      
+      <Cskills />
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
